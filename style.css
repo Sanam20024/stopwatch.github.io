@@ -1,0 +1,126 @@
+/* to give body background colour */
+body{
+   background-image: url("images/background image.avif");
+    padding: 0;
+    margin: 0;
+}
+/* for give heading style */
+#heading{
+     color:#054f92;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align:center;
+    font-style:italic;
+    text-shadow:#14b2fa 1px 0 10px; 
+    margin-top: 50px;
+}
+/* this is for main -div which contain timer and button */
+#main-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50vh;
+    margin: auto;
+    background-color:#7dd4ca;
+    border-radius: 25px;
+    border: 2px solid #46ab9f;
+    box-shadow: 20px 20px 50px 15px #46ab9f;
+    opacity: 0.8;
+}
+
+/* give styling for timer container */
+#timer-container{
+    font-size: 30rem;
+    color: #fff;
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* this is for timer text 0 */
+.timer{
+    font-size: 20%;
+    font-weight: bold;
+    color:brown;
+   
+}
+
+/* this is for timer text HR Min Sec Count */
+.text{
+    font-style: italic;
+     font-size: 30px;
+     color:chocolate;
+}
+/* media Query */
+@media screen and (min-width:200px){
+    .timer{
+        font-size: 2.5rem;
+    }
+    .text{
+        font-size:1rem ;
+        margin-top: 25px;
+    }
+    .btn{
+        margin-left: 30px;
+        margin-top: 80px;
+    }
+    #main-div{
+        height: 70vh;
+        width: 70vw;
+       
+    } 
+}
+@media screen  and (min-width:600px){
+    .timer{
+        font-size: 3rem;
+    }
+    .text{
+        font-size:1rem ;
+        margin-top: 70px;
+    }
+    .btn{
+        margin-left: 20px;
+        margin-top: 80px;
+    }
+    #main-div{
+        height: 70vh;
+        width: 70vw;
+        margin-top: 50px;
+       
+    } 
+     
+}
+@media screen  and (min-width:900px){
+    .timer{
+        font-size: 4rem;
+    }
+    .text{
+        font-size:1rem ;
+        margin-top: 50px;
+    }
+    .btn{
+        margin-right: 40px;
+        margin-top: 80px;
+        width: 6vw;
+        height: 6vh;
+    }  
+}
+@media screen  and (min-width:1024px){
+    .timer{
+        font-size: 5rem;
+    }
+    .text{
+        font-size:2rem ;
+        margin-top: 50px;
+    }
+    #main-div{
+        margin-top: 70pxpx;
+        width: 50%;
+    height: 50vh;
+
+    }
+    #heading{
+        font-size: 4rem;
+    }
+    
+}
